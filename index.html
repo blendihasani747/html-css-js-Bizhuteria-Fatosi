@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizhuteria Fatosi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/responsive-nav.js"></script>
+    <script src="js/snowflake.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/nav-scroll.js"></script>
+    <script src="js/mobile-nav.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><span>Bizhuteria</span> Fatosi</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#hero">Ballina</a></li>
+                <li><a href="#about">Rreth Nesh</a></li>
+                <li><a href="#services">Shërbimet</a></li>
+                <li><a href="season-products.html">Produkte Sezonale</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Mirë se vini në Bizhuteri-ne Fatosi</h1>
+            <p>Zbuloni koleksionin tonë të veçantë të bizhuterive artizanale</p>
+            <a href="#contact" class="cta-button">Na Kontaktoni</a>
+        </div>
+    </section>
+
+    <img src="images/chatbot-logo.png" class="floating-icon" id="chatIcon" alt="Chat Icon">
+
+    <div class="iframe-popup" id="iframePopup">
+        <button class="close-button" id="closeButton">×</button>
+        <iframe 
+            src="https://embed.pickaxeproject.com/axe?id=Bizhuteria_Fatosi_FT3OB&mode=embed_gold&host=beta&theme=light&opacity=100&font_header=Real+Head+Pro&size_header=30&font_body=Real+Head+Pro&size_body=16&font_labels=Real+Head+Pro&size_labels=14&font_button=Real+Head+Pro&size_button=16&c_fb=F6F8FA&c_ff=FFFFFF&c_fbd=888888&c_rb=FFFFFF&c_bb=000000&c_bt=FFFFFF&c_t=000000&s_ffo=100&s_rbo=100&s_bbo=100&s_f=minimalist&s_b=filled&s_t=1&s_to=1&s_r=2"
+            loading="eager"
+        ></iframe>
+    </div>
+
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Rreth Nesh</h2>
+                <p>Që nga viti 2010, Bizhuteria Fatosi ka qenë destinacioni juaj i preferuar për bizhuteri cilësore dhe unike.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-gem"></i>
+                        <h3>Cilësi Premium</h3>
+                        <p>Përdorim vetëm materiale të cilësisë së lartë</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Shërbim Profesional</h3>
+                        <p>Stafi ynë është gjithmonë gati t'ju ndihmojë</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-star"></i>
+                        <h3>Eksperiencë e Gjatë</h3>
+                        <p>Mbi 13 vjet në tregun shqiptar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Shërbimet Tona</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-ring"></i>
+                <h3>Riparime</h3>
+                <p>Riparojmë çdo lloj bizhuterie me kujdes maksimal</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-magic"></i>
+                <h3>Shitje</h3>
+                <p>Shesim Bizhuteri te qdo llojit, me dizajne unike!</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-pencil-alt"></i>
+                <h3>Dizajne të Personalizuara</h3>
+                <p>Realizojmë idetë tuaja në bizhuteri unike</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Na Kontaktoni</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Çagllavicë, Prishtine - Ferizaj
+                    </p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+383 45 640 545</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@bizhuteriafatosi.al</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/BizhuteriaTeFatosi/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/fatosistore/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="01090ea7-8bd0-412e-bb8c-e3c1feb074da">
+                    <input type="text" name="name" placeholder="Emri juaj" required>
+                    <input type="email" name="email" placeholder="Email-i juaj" required>
+                    <textarea name="message" placeholder="Mesazhi juaj" required></textarea>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <button type="submit">Dërgo Mesazhin</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="map-container" style="display: flex; justify-content: center; width: 100%;">
+            <div class="contact-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.5745646029136!2d21.1360748!3d42.6067691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549d7619bf9093%3A0x3bde87ffa93faf25!2sFatosi%20Store%20-%20Bizhuteria%20Fatosi!5e0!3m2!1ssq!2s!4v1732392936889!5m2!1ssq!2s" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Bizhuteria Fatosi</h3>
+                <p>Cilësi dhe elegancë që nga viti 2010</p>
+            </div>
+            <div class="footer-hours">
+                <h3>Orari</h3>
+                <p>E Hënë - E Shtunë: 09:00 - 20:00</p>
+                <p>E Diel: Pushim</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 blendihasani747. Të gjitha të drejtat të rezervuara.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
